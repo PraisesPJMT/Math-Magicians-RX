@@ -35,4 +35,28 @@ const Numbers = () => (
   </>
 );
 
-
+const Operators = (
+  <>
+    <span className="operator orange plus">
+      +
+    </span>
+    <span className="operator orange minus">
+      -
+    </span>
+    <span className="operator orange divide">
+      /
+    </span>
+    <span className="operator orange times">
+      x
+    </span>
+    <span className="operator orange equal">
+      =
+    </span>
+    <span className="operator light modulus">
+      %
+    </span>
+    <span className="operator light plus-minus">
+      +/-
+    </span>
+  </>
+);
