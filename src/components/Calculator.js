@@ -35,7 +35,7 @@ const Numbers = () => (
   </>
 );
 
-const Operators = (
+const Operators = () => (
   <>
     <span className="operator orange plus">
       +
@@ -61,7 +61,7 @@ const Operators = (
   </>
 );
 
-const SpecialOperators = (
+const SpecialOperators = () => (
   <>
     <span className="display">
       0
@@ -74,3 +74,13 @@ const SpecialOperators = (
     </span>
   </>
 );
+
+const Calculator = () => (
+  <div className="calculator">
+    <SpecialOperators />
+    <Numbers />
+    <Operators />
+  </div>
+);
+
+export default Calculator;
