@@ -41,13 +41,13 @@ const Operators = () => (
       +
     </span>
     <span className="operator orange minus">
-      -
+      &minus;
     </span>
     <span className="operator orange divide">
-      /
+      &divide;
     </span>
     <span className="operator orange times">
-      x
+      &times;
     </span>
     <span className="operator orange equal">
       =
@@ -56,7 +56,7 @@ const Operators = () => (
       %
     </span>
     <span className="operator light plus-minus">
-      +/-
+      +/&minus;
     </span>
   </>
 );
@@ -66,10 +66,10 @@ const SpecialOperators = () => (
     <span className="display">
       0
     </span>
-    <span className="light dot">
+    <span className="operator light dot">
       .
     </span>
-    <span className="light clear">
+    <span className="operator light clear">
       AC
     </span>
   </>
