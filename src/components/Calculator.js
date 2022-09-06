@@ -60,3 +60,17 @@ const Operators = (
     </span>
   </>
 );
+
+const SpecialOperators = (
+  <>
+    <span className="display">
+      0
+    </span>
+    <span className="light dot">
+      .
+    </span>
+    <span className="light clear">
+      AC
+    </span>
+  </>
+);
