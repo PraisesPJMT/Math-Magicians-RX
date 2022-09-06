@@ -5,7 +5,7 @@
 > - Read a random math-related quote.
 
 ## Preview
-Coming soon :smile:
+![App Preview](src/assets/app-preview.png)
 
 ## Built With (Linter)
 
