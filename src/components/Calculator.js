@@ -1,84 +1,176 @@
 import React from 'react';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.props = props;
     this.state = {
-      total: 0,
+      total: null,
       next: null,
       operation: null,
     };
+    this.eventOperations = this.eventOperations.bind(this);
   }
 
-  get result() {
-    const { total, next } = this.state;
-    return `${next || total}`;
+  get display() {
+    const { total, next, operation } = this.state;
+    if (next === null && total === null) {
+      return 0;
+    }
+    return `${total || ''} ${operation || ''} ${next || ''}`;
+  }
+
+  eventOperations(button) {
+    const {
+      target: {
+        textContent: buttonName,
+      },
+    } = button;
+    this.setState((state) => (
+      calculate(state, buttonName)
+    ));
   }
 
   render() {
     return (
       <div className="calculator">
-        <span className="number light number-0">
+        <button
+          type="button"
+          className="number light number-0"
+          onClick={this.eventOperations}
+        >
           0
-        </span>
-        <span className="number light number-1">
+        </button>
+        <button
+          type="button"
+          className="number light number-1"
+          onClick={this.eventOperations}
+        >
           1
-        </span>
-        <span className="number light number-2">
+        </button>
+        <button
+          type="button"
+          className="number light number-2"
+          onClick={this.eventOperations}
+        >
           2
-        </span>
-        <span className="number light number-3">
+        </button>
+        <button
+          type="button"
+          className="number light number-3"
+          onClick={this.eventOperations}
+        >
           3
-        </span>
-        <span className="number light number-4">
+        </button>
+        <button
+          type="button"
+          className="number light number-4"
+          onClick={this.eventOperations}
+        >
           4
-        </span>
-        <span className="number light number-5">
+        </button>
+        <button
+          type="button"
+          className="number light number-5"
+          onClick={this.eventOperations}
+        >
           5
-        </span>
-        <span className="number light number-6">
+        </button>
+        <button
+          type="button"
+          className="number light number-6"
+          onClick={this.eventOperations}
+        >
           6
-        </span>
-        <span className="number light number-7">
+        </button>
+        <button
+          type="button"
+          className="number light number-7"
+          onClick={this.eventOperations}
+        >
           7
-        </span>
-        <span className="number light number-8">
+        </button>
+        <button
+          type="button"
+          className="number light number-8"
+          onClick={this.eventOperations}
+        >
           8
-        </span>
-        <span className="number light number-9">
+        </button>
+        <button
+          type="button"
+          className="number light number-9"
+          onClick={this.eventOperations}
+        >
           9
-        </span>
-        <span className="operator orange plus">
+        </button>
+        <button
+          type="button"
+          className="operator orange plus"
+          onClick={this.eventOperations}
+        >
           +
-        </span>
-        <span className="operator orange minus">
-          &minus;
-        </span>
-        <span className="operator orange divide">
-          &divide;
-        </span>
-        <span className="operator orange times">
-          &times;
-        </span>
-        <span className="operator orange equal">
+        </button>
+        <button
+          type="button"
+          className="operator orange minus"
+          onClick={this.eventOperations}
+        >
+          -
+        </button>
+        <button
+          type="button"
+          className="operator orange divide"
+          onClick={this.eventOperations}
+        >
+          ÷
+        </button>
+        <button
+          type="button"
+          className="operator orange times"
+          onClick={this.eventOperations}
+        >
+          x
+        </button>
+        <button
+          type="button"
+          className="operator orange equal"
+          onClick={this.eventOperations}
+        >
           =
-        </span>
-        <span className="operator light modulus">
+        </button>
+        <button
+          type="button"
+          className="operator light modulus"
+          onClick={this.eventOperations}
+        >
           %
-        </span>
-        <span className="operator light plus-minus">
-          +/&minus;
-        </span>
+        </button>
+        <button
+          type="button"
+          className="operator light plus-minus"
+          onClick={this.eventOperations}
+        >
+          +/-
+        </button>
         <span className="display">
-          { this.result }
+          { this.display }
         </span>
-        <span className="operator light dot">
+        <button
+          type="button"
+          className="operator light dot"
+          onClick={this.eventOperations}
+        >
           .
-        </span>
-        <span className="operator light clear">
+        </button>
+        <button
+          type="button"
+          className="operator light clear"
+          onClick={this.eventOperations}
+        >
           AC
-        </span>
+        </button>
       </div>
     );
   }
