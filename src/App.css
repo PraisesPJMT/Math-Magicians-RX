@@ -8,7 +8,8 @@
   border: 1px solid #c9c9c9ff;
 }
 
-.calculator > span {
+.calculator > span,
+.calculator > button {
   padding: 1rem;
   border: 1px solid #c9c9c9ff;
   font-size: 1.2rem;
