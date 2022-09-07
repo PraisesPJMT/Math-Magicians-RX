@@ -4,6 +4,16 @@ class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.props = props;
+    this.state = {
+      total: 0,
+      next: null,
+      operation: null,
+    };
+  }
+
+  get result() {
+    const { total, next } = this.state;
+    return `${next || total}`;
   }
 
   render() {
@@ -61,7 +71,7 @@ class Calculator extends React.Component {
           +/&minus;
         </span>
         <span className="display">
-          0
+          { this.result }
         </span>
         <span className="operator light dot">
           .
