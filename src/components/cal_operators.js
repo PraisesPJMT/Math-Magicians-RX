@@ -6,7 +6,7 @@ const Operators = ({ eventOperations }) => {
     { value: '+', color: 'orange', name: 'plus' },
     { value: '-', color: 'orange', name: 'minus' },
     { value: '÷', color: 'orange', name: 'divide' },
-    { value: 'x', color: 'orange', name: 'times' },
+    { value: '×', color: 'orange', name: 'times' },
     { value: '=', color: 'orange', name: 'equal' },
     { value: '%', color: 'light', name: 'modulus' },
     { value: '+/-', color: 'light', name: 'plus-minus' },
