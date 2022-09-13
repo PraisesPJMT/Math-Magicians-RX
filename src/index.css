@@ -5,8 +5,16 @@
   padding: 0;
 }
 
+/* body { */
+
+/*  width: 100vw; */
+
+/*  height: 100vh; */
+
+/* } */
+
 #root {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   font-family: 'Karla', sans-serif;
