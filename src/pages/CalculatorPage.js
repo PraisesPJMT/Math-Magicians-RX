@@ -1,7 +1,7 @@
 import React from 'react';
 import Calculator from '../components/Calculator';
-import MathIcon from '../assets/calculator.png';
-import './styles/Calculator_Page.css';
+import MathIcon from '../assets/math.png';
+import './styles/CalculatorPage.css';
 
 const CalculatorPage = () => (
   <div className="calculator-page">

@@ -8,6 +8,7 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import CalculatorPage from './pages/CalculatorPage';
+import HomePage from './pages/HomePage';
 
 const App = () => (
   <Router>
@@ -15,6 +16,7 @@ const App = () => (
     <main className="main">
       <Routes>
         <Route path="/calculator" element={<CalculatorPage />} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
     </main>
     <Footer />
