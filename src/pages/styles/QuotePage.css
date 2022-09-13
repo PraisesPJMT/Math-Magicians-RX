@@ -1,0 +1,16 @@
+.quote-page {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-page .text {
+  width: 50%;
+  text-align: center;
+}
+
+.author {
+  color: #bcfd4c;
+  font-weight: 500;
+}

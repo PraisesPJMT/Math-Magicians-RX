@@ -1,8 +1,8 @@
 /* Calculator Styles */
 
 .calculator {
-  width: 90%;
-  max-width: 350px;
+  width: 50%;
+  min-width: 350px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   border: 1px solid #c9c9c9ff;

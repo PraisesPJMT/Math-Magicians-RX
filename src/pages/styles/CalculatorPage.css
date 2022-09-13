@@ -1,10 +1,11 @@
 .calculator-page {
   display: flex;
   gap: 1rem;
+  width: 100%;
 }
 
 .math-info {
-  width: 50%;
+  width: 40%;
   margin-right: auto;
   display: flex;
   flex-direction: column;
