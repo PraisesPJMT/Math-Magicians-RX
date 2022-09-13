@@ -13,6 +13,16 @@
   padding: 0 1rem;
 }
 
+.link {
+  font-weight: 600;
+  color: #bcfd4c;
+  text-decoration: none;
+}
+
+link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .text-container {
     width: 100%;
