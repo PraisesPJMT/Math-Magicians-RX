@@ -5,19 +5,11 @@
   padding: 0;
 }
 
-/* body { */
-
-/*  width: 100vw; */
-
-/*  height: 100vh; */
-
-/* } */
-
 #root {
   width: 100vw;
   display: flex;
   flex-direction: column;
   font-family: 'Karla', sans-serif;
-  background: #6e6e6e;
+  background: #6e6e6e99;
   height: 100vh;
 }

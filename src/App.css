@@ -1,5 +1,9 @@
 .main {
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: center;
+}
+
+.subtitle {
+  color: #bcfd4c;
 }

@@ -1,0 +1,17 @@
+.calculator-page {
+  display: flex;
+  gap: 1rem;
+}
+
+.math-info {
+  width: 50%;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.math-icon {
+  width: 50%;
+  margin: auto;
+}

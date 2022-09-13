@@ -13,13 +13,13 @@ const Header = () => {
     {
       id: 2,
       name: 'Calculator',
-      path: '/',
+      path: '/calculator',
       className: 'nav-calculator nav-link',
     },
     {
       id: 3,
       name: 'Quote',
-      path: '/',
+      path: '/quote',
       className: 'nav-quote nav-link',
     },
   ];
