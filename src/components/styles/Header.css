@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.logo {
+  margin-right: auto;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.logo-left {
+  color: #fff;
+}
+
+.logo-right {
+  color: #6e6e6e;
+  -webkit-text-stroke: 2px #bcfd4c;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #000;
+  background: #bcfd4c;
+}
