@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './styles/Header.css';
 
 const Header = () => {
@@ -24,13 +24,13 @@ const Header = () => {
     },
   ];
   const NavBars = Navigation.map((nav) => (
-    <Link
+    <NavLink
       to={nav.path}
       className={nav.className}
       key={nav.id}
     >
       {nav.name}
-    </Link>
+    </NavLink>
   ));
   return (
     <header className="header">

@@ -16,3 +16,22 @@
   width: 50%;
   margin: auto;
 }
+
+@media (max-width: 768px) {
+  .calculator-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .math-info {
+    width: 100%;
+  }
+
+  .math-icon {
+    display: none;
+  }
+
+  .calculator {
+    margin: 0 auto;
+  }
+}

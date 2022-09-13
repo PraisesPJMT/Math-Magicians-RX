@@ -1,15 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './styles/QuotePage.css';
 
-const QuotePage = () => (
-  <div className="quote-page">
-    <p className="text">
-      Mathematics is not about numbers, equations,
-      computations, or algorithms: it is about understanding.
-      {'  '}
-      <span className="author">- William Paul Thurston</span>
-    </p>
-  </div>
-);
+const QuotePage = () => {
+  const [mathQuote, setMathQuote] = useState({});
+  const mathQuoteAPI = 'https://random-math-quote-api.herokuapp.com/';
+  useEffect(() => {
+    axios
+      .get(mathQuoteAPI)
+      .then((response) => {
+        setMathQuote(response.data);
+      });
+  }, []);
+  const { author, quote } = mathQuote;
+  return (
+    <div className="quote-page">
+      <p className="text">
+        { quote }
+        {' '}
+        <span className="author">
+          -
+          {' '}
+          { author }
+        </span>
+      </p>
+    </div>
+  );
+};
 
 export default QuotePage;

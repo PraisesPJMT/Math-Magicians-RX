@@ -5,7 +5,8 @@
   min-width: 350px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  border: 1px solid #c9c9c9ff;
+  border: 1px solid #bcfd4c;
+  box-shadow: 0 1px 10px #bcfd4c;
 }
 
 .calculator > span,
@@ -137,4 +138,17 @@
 .dot {
   grid-column: 3;
   grid-row: 6;
+}
+
+@media (max-width: 480px) {
+  .calculator {
+    min-width: 250px;
+  }
+
+  .calculator > span,
+  .calculator > button {
+    padding: 0.6rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }
