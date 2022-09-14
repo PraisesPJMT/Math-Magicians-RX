@@ -1,0 +1,154 @@
+/* Calculator Styles */
+
+.calculator {
+  width: 50%;
+  min-width: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 1px solid #bcfd4c;
+  box-shadow: 0 1px 10px #bcfd4c;
+}
+
+.calculator > span,
+.calculator > button {
+  padding: 1rem;
+  border: 1px solid #c9c9c9ff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.number,
+.operator {
+  text-align: center;
+  cursor: pointer;
+}
+
+.display {
+  background: #858693ff;
+  grid-column: 1 / 5;
+  grid-row: 1;
+  text-align: right;
+  color: #fff;
+}
+
+.orange {
+  background: #f39148ff;
+}
+
+.light {
+  background: #e0e0e0ff;
+}
+
+/* Numbers */
+
+.number-0 {
+  grid-column: 1 / 3;
+  grid-row: 6;
+}
+
+.number-1 {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.number-2 {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.number-3 {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+.number-4 {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.number-5 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.number-6 {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.number-7 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.number-8 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.number-9 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+/* Operators Styles */
+
+.divide {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.times {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.minus {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+.plus {
+  grid-column: 4;
+  grid-row: 5;
+}
+
+.equal {
+  grid-column: 4;
+  grid-row: 6;
+}
+
+/* Special Operators */
+
+.clear {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.plus-minus {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.modulus {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.dot {
+  grid-column: 3;
+  grid-row: 6;
+}
+
+@media (max-width: 480px) {
+  .calculator {
+    min-width: 250px;
+  }
+
+  .calculator > span,
+  .calculator > button {
+    padding: 0.6rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

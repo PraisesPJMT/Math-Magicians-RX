@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #root {
-  width: 100%;
+  width: 100vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  font-family: 'Karla', sans-serif;
+  background: #6e6e6e99;
+  height: 100vh;
 }

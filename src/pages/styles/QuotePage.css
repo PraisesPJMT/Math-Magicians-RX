@@ -1,0 +1,30 @@
+.quote-page {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-page .text {
+  width: 50%;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 1px 10px #bcfd4c;
+}
+
+.author {
+  color: #bcfd4c;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .quote-page .text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-page .text {
+    width: 95%;
+  }
+}
