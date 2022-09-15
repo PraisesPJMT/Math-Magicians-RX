@@ -16,9 +16,9 @@ const App = () => (
     <Header />
     <main className="main">
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/calculator" element={<CalculatorPage />} />
-        <Route path="/quote" element={<QuotePage />} />
+        <Route path="Math-Magicians-RX/" element={<HomePage />} />
+        <Route path="Math-Magicians-RX/calculator" element={<CalculatorPage />} />
+        <Route path="Math-Magicians-RX/quote" element={<QuotePage />} />
       </Routes>
     </main>
     <Footer />

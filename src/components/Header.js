@@ -7,19 +7,19 @@ const Header = () => {
     {
       id: 1,
       name: 'Home',
-      path: '/',
+      path: 'Math-Magicians-RX/',
       className: 'nav-home nav-link',
     },
     {
       id: 2,
       name: 'Calculator',
-      path: '/calculator',
+      path: 'Math-Magicians-RX/calculator',
       className: 'nav-calculator nav-link',
     },
     {
       id: 3,
       name: 'Quote',
-      path: '/quote',
+      path: 'Math-Magicians-RX/quote',
       className: 'nav-quote nav-link',
     },
   ];
@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <header className="header">
       <Link
-        to="/"
+        to="Math-Magicians-RX/"
         className="logo"
       >
         <h2>
