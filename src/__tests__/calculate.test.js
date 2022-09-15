@@ -1,6 +1,6 @@
 import calculate from '../logic/calculate';
 
-describe('Test on calculate.js calculate functions', () => {
+describe('Test on calculate function', () => {
   const state = {
     total: null,
     next: null,

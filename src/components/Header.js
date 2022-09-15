@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <header className="header">
       <Link
-        to="/"
+        to="Math-Magicians-RX/"
         className="logo"
       >
         <h2>
