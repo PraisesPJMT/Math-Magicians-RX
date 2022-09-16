@@ -27,8 +27,8 @@ The following applications are required to be installed for the project to run!
   - If the app is not opened immediately, then open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## App Deployment
-App is live on [Math MagicianS](https://praisespjmt.github.io/Math-Magicians-RX/)<br/>
-Link: [https://praisespjmt.github.io/Math-Magicians-RX/](https://praisespjmt.github.io/Math-Magicians-RX/)
+App is live on [Math MagicianS](https://pjmt-math.netlify.app/)<br/>
+Link: [https://pjmt-math.netlify.app/](https://pjmt-math.netlify.app/)
 
 
 ## Authors
