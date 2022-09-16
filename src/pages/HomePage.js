@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import MathIcon from '../assets/math.png';
 import CalculatorIcon from '../assets/calculator.png';
+import MathIcon from '../assets/math-icon.png';
 import './styles/HomePage.css';
 
 const HomePage = () => (
@@ -33,7 +33,7 @@ const HomePage = () => (
         evaluating addition, subtraction, multiplication, division, modulus and more.
         Checkout the
         <Link
-          to="Math-Magicians-RX/quote"
+          to="/quote"
           className="link"
         >
           {' '}

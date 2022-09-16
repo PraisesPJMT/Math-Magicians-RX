@@ -5,6 +5,8 @@
   min-width: 350px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.3rem;
+  padding: 0.3rem;
   border: 1px solid #bcfd4c;
   box-shadow: 0 1px 10px #bcfd4c;
 }
@@ -12,9 +14,13 @@
 .calculator > span,
 .calculator > button {
   padding: 1rem;
-  border: 1px solid #c9c9c9ff;
+  border: none;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.calculator > button:hover {
+  font-weight: 900;
 }
 
 .number,
@@ -24,7 +30,7 @@
 }
 
 .display {
-  background: #858693ff;
+  background: #6e6e6e99;
   grid-column: 1 / 5;
   grid-row: 1;
   text-align: right;
@@ -32,11 +38,13 @@
 }
 
 .orange {
-  background: #f39148ff;
+  background: #bcfd4c;
+  border-radius: 10px;
 }
 
 .light {
   background: #e0e0e0ff;
+  border-radius: 10px;
 }
 
 /* Numbers */

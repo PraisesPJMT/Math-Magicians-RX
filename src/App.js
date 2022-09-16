@@ -12,13 +12,13 @@ import HomePage from './pages/HomePage';
 import QuotePage from './pages/QuotePage';
 
 const App = () => (
-  <Router>
+  <Router path="/">
     <Header />
     <main className="main">
       <Routes>
-        <Route path="Math-Magicians-RX/" element={<HomePage />} />
-        <Route path="Math-Magicians-RX/calculator" element={<CalculatorPage />} />
-        <Route path="Math-Magicians-RX/quote" element={<QuotePage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/calculator" element={<CalculatorPage />} />
+        <Route path="/quote" element={<QuotePage />} />
       </Routes>
     </main>
     <Footer />
